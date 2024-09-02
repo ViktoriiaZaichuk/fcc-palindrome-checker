@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palidrome Checker Free Code Camp</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Palindrome Checker | FreeCodeCamp</title>
 </head>
 <body>
     <main>
-        
+        <header>
+            <h1>Palindrome Checker</h1>
+        </header>
+        <section aria-labelledby="checker-instructions">
+            <h2 id="checker-instructions">Check if a word or sentence is a palindrome:</h2>
+
+            <form id="palindrome-form" aria-describedby="result">
+                <label for="text-input">Enter text:</label>
+                <input id="text-input" name="text-input" type="text" aria-required="true" required>
+                <button id="check-btn" type="button">Check</button>
+            </form>
+
+            <p id="result" role="alert" aria-live="polite"></p>
+        </section>
+
+        <section aria-labelledby="palindrome-info">
+            <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
